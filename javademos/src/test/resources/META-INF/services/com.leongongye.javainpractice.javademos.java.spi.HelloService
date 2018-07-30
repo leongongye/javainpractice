@@ -1,0 +1,5 @@
+#English implementation
+com.leongongye.javainpractice.javademos.java.spi.EnglishHelloServiceImpl
+
+#Chinese implementation
+com.leongongye.javainpractice.javademos.java.spi.ChineseHelloServiceImpl
