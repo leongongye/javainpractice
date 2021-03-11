@@ -96,6 +96,20 @@ public class ArrayUtils {
     /*  判断一个数组是否为null或包含0个元素。                                       */
     /* ============================================================================ */
 
+    public static int[] genRandomArray(int size, int max) {
+        return max > 0 ? genRandomArray(size, 0, max) : genRandomArray(size, max, 0);
+    }
+
+    public static int[] genRandomArray(int size, int min, int max) {
+        int[] ret = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            ret[i] = (int) (Math.random() * (max - min));
+        }
+
+        return ret;
+    }
+
     /**
      * 检查数组是否为<code>null</code>或空数组<code>[]</code>。
      * <pre>

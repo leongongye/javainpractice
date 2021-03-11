@@ -4,6 +4,8 @@
  */
 package com.leongongye.javainpractice.javademos.algorithm.sort;
 
+import com.leongongye.javainpractice.javademos.utils.ArrayUtils;
+
 /**
  * @author leon
  * @date 2021-03-10 21:25:34
@@ -12,7 +14,7 @@ package com.leongongye.javainpractice.javademos.algorithm.sort;
 public class SortMain {
     public static void main(String[] args) {
 
-        int[] a = genArray(10, 100);
+        int[] a = ArrayUtils.genRandomArray(0, 100);
         //int[] a = new int[] {7, 23, 61, 92, 97, 84, 32, 72, 21, 87};
 
         AbstractSorter ss = new SelectSorter();
